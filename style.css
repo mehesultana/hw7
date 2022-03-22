@@ -1,0 +1,91 @@
+body {
+	background-color: rgb(255, 255, 255);
+}
+h1 {
+	text-align: center;
+}
+.c1 {
+	height: 300px;
+	width: 300px;
+	background-color: rgb(221, 127, 146);
+	position: relative;
+	margin: auto;
+}
+.c1::before {
+	content: '';
+	position: absolute;
+	background-color: rgb(197, 196, 241);
+	left: 5%;
+	width: 90%;
+	height: 20%;
+	bottom: -50px;
+	border-radius: 50%;
+	z-index: -1;
+	filter: blur(15px);
+}
+.c2 {
+	height: 300px;
+	width: 300px;
+	background-color: rgb(149, 172, 187);
+	position: relative;
+	margin: auto;
+}
+.c2::before {
+	content: '';
+	position: absolute;
+	background-color: rgb(105, 105, 150);
+	left: 5%;
+	width: 90%;
+	height: 90%;
+	bottom: -20px;
+	z-index: -1;
+	filter: blur(15px);
+}
+
+.c3 {
+	height: 300px;
+	width: 300px;
+	background-color: rgb(183, 159, 192);
+	position: relative;
+	margin: auto;
+	border-radius: 20px;
+	box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.5), 15px 15px 15px rgba(0, 0, 0, 0.5);
+}
+
+.c4 {
+	height: 300px;
+	width: 300px;
+	background-color: rgb(240, 196, 229);
+	position: relative;
+	margin: auto;
+	border-radius: 20px;
+	box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.5), 15px 15px 15px rgba(0, 0, 0, 0.5), inset -15px -15px 15px rgba(255, 255, 255, 0.4), inset 15px 15px 15px rgba(0, 0, 0, 0.4);
+}
+.c5 {
+	background-repeat: no-repeat;
+	height: 300px;
+	width: 300px;
+	background-image: url(Back2.jpg);
+	position: relative;
+	margin: auto;
+	background-position: -178px -76px;
+}
+c5:hover {
+	background-position: 10px 10px;
+}
+
+.c6 {
+	height: 250px;
+	width: 250px;
+	background-color: rgb(129, 98, 238);
+	margin: 100px auto;
+	transition-property: all;
+	transition-duration: 0.8s;
+}
+.c6:hover {
+	height: 150px;
+	width: 150px;
+	transform: rotate(180deg);
+	border-radius: 50%;
+	background-color: rgb(198, 140, 210);
+}
